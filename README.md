@@ -1,4 +1,4 @@
-# Apprioiach used 
+# Approach used 
 ## Kmeans
 K-means clustering is an unsupervised machine learning algorithm used to group similar data points into clusters. It works by iteratively assigning data points to the nearest centroid, then recalculating the centroids based on the assigned points, until the centroids no longer change significantly. The goal is to minimize the distance between data points and their assigned cluster centers. 
 <br>
