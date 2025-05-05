@@ -14,20 +14,20 @@ int main() {
     
     riscv_start_counters();
     
-    // Normalize data
+    
     normalize_data(data, num_points, dimensions);
     
-    // Determining optimal k
+    
     uint32_t k = determine_optimal_k(data, num_points, dimensions);
     printf("Optimal number of clusters: %u\n", k);
     
-    // clustering
+    
     Cluster clusters[MAX_CLUSTERS];
     kmeans_clustering(data, num_points, dimensions, k, clusters);
     
     riscv_stop_counters();
     
-    //Results
+    
     printf("Clustering completed in %lu cycles, %lu instructions\n", 
            cycle_count, inst_count);
     
