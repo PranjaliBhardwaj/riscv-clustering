@@ -25,6 +25,7 @@ Scaling with data size <br>
 ## Overview
 This project implements a clustering workload analysis system optimized for RISC-V architectures, specifically targeting the Olympia performance model. The system performs k-means clustering on N-dimensional data with automatic determination of the optimal number of clusters using the elbow method.
 ## Project Structure 
+```text
 riscv-clustering/
 ├── include/              # Header files
 │   ├── clustering.h      # Main clustering interface
@@ -44,7 +45,7 @@ riscv-clustering/
 │   └── test_data.h      # Test datasets
 ├── Makefile             # Build system
 └── link.ld             # Linker script
-
+```
 ## Prerequisite
 
 RISC-V toolchain (riscv64-unknown-elf-gcc) <br>
