@@ -27,11 +27,11 @@ void normalize_data(DataPoint* data, uint32_t num_points, uint32_t dimensions) {
     
     for (uint32_t d = 0; d < dimensions; d++) {
         stddev[d] = sqrt(stddev[d] / num_points);
-        // Avoid division by zero for constant dimensions
+        // avoid calculation to 0
         if (stddev[d] == 0.0) stddev[d] = 1.0;
     }
     
-    // Normalizing data
+    
     for (uint32_t i = 0; i < num_points; i++) {
         for (uint32_t d = 0; d < dimensions; d++) {
             data[i].values[d] = (data[i].values[d] - mean[d]) / stddev[d];
