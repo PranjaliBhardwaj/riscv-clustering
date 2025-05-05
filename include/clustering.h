@@ -21,7 +21,7 @@ uint32_t determine_optimal_k(DataPoint* data, uint32_t num_points, uint32_t dime
 void kmeans_clustering(DataPoint* data, uint32_t num_points, 
                       uint32_t dimensions, uint32_t k, Cluster* clusters);
 
-// Performance counters
+
 extern uint64_t cycle_count;
 extern uint64_t inst_count;
 
